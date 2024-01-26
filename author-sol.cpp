@@ -3,10 +3,10 @@
 using namespace std;
 
 bool ok(int* a, int* b, int mid, int n) {
-	int p = 0;
+	int cnt = 0;
 	for (int i = 0; i < n; i++)
-		p += (mid - 1 - a[i] <= p && p <= b[i]);
-	return p >= mid;
+		cnt += (mid - 1 - a[i] <= cnt && cnt <= b[i]);
+	return cnt >= mid;
 }
 
 void test_case(int& tc) {
